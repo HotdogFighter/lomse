@@ -4776,7 +4776,7 @@ MxlExporter::MxlExporter(LibraryScope& libScope)
     time_t time_sec = chrono::system_clock::to_time_t(chrono::system_clock::now());
     tm time_tm;
 
-#if (LOMSE_COMPILER_MSVC == 1)
+#if (LOMSE_COMPILER_MSVC == 1 || LOMSE_PLATFORM_WIN32 == 1)
     localtime_s(&time_tm, &time_sec);
 #else
     localtime_r(&time_sec, &time_tm);

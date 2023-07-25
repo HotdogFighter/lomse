@@ -52,7 +52,7 @@ string to_simple_string(chrono::time_point<chrono::system_clock> time, bool micr
     time_t time_sec = chrono::system_clock::to_time_t(time);
     tm time_tm;
 
-#if (LOMSE_COMPILER_MSVC == 1)
+#if (LOMSE_COMPILER_MSVC == 1 || LOMSE_PLATFORM_WIN32 == 1)
     localtime_s(&time_tm, &time_sec);
 #else
     localtime_r(&time_sec, &time_tm);

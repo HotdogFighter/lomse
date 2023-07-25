@@ -25,6 +25,7 @@ find_path(UNITTEST++_INCLUDE_DIR
 		$ENV{UnitTest++_DIR}/include/UnitTest++						#Windows
 		"C:/Program Files (x86)/UnitTest++/include/UnitTest++"		#Windows
 		"C:/Program Files/UnitTest++/include/UnitTest++"		    #Windows
+		"C:/msys64/mingw64/include/UnitTest++" 						#Windows
 )
 
 FIND_LIBRARY (UNITTEST++_LIBRARY
@@ -41,6 +42,7 @@ FIND_LIBRARY (UNITTEST++_LIBRARY
 		$ENV{UnitTest++_DIR}/lib					#Windows
 		"C:/Program Files (x86)/UnitTest++/lib"		#Windows
 		"C:/Program Files/UnitTest++/lib"			#Windows
+		"C:/msys64/mingw64/lib" 					#Windows
 )
 
 SET (UNITTEST++_FOUND FALSE)

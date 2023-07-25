@@ -178,7 +178,7 @@ void update_rendering_buffer_if_needed()
         if (SpInteractor spInteractor = m_pPresenter->get_interactor(0).lock())
         {
             spInteractor->set_rendering_buffer(m_bitmap.buf(), m_bitmap.width(),
-                                               m_bitmap.height();
+                                               m_bitmap.height());
             spInteractor->force_redraw();
         }
         m_view_needs_redraw = false;

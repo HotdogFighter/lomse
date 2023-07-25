@@ -940,7 +940,7 @@ if (LOMSE_BUILD_EXAMPLE)
         set( EXAMPLE1_SRC  ${LOMSE_ROOT_DIR}/examples/tutorials/tutorial-1-win )
 
         include_directories(
-            ${LOMSE_SRC_DIR}/agg/include/platform/win32/agg_win32_bmp.h
+            ${LOMSE_SRC_DIR}/agg/include/platform/win32/
         )
 
         add_executable( ${EXAMPLE1} WIN32

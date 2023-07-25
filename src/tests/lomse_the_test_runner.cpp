@@ -145,7 +145,7 @@ int main(int argc, char** argv)
         nErrors = runner.RunTestsIf(Test::GetTestList(), nullptr, True(), 0);
     }
 
-    #if defined WIN32 || defined _WIN32
+    #if (LOMSE_COMPILER_MSVC == 1)
         _CrtDumpMemoryLeaks();
     #endif
 
